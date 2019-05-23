@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mild High Club</title>
+    <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="index.html">
+      <h1 class=header-text>MILD HIGH CLUB</h1>
+    </a>
+
+      <div class=social>
+        <a href="https://twitter.com/mildhighclub?lang=en" id=twitter>
+          <img src="./assets/images/twitter.png" height="35" width="35">
+        </a>
+        <a href="https://www.facebook.com/themildhighclub/" id=facebook>
+          <img src="./assets/images/facebook.png" height="35" width="35">
+        </a>
+        <a href="https://www.instagram.com/mildhighclub/?hl=en" id=instagram>
+          <img src="./assets/images/instagram.png" height="35" width="35">
+        </a>
+      </div>
+
+      <div class=header></div>
+
+      <div class=nav>
+        <nav>
+          <h2>
+            <a href ="/">HOME</a>
+            <a href ="about.html">ABOUT</a>
+            <a href ="discography.html">DISCOGRAPHY</a>
+            <a href="media.html">MEDIA</a>
+            <a href="merch.html">MERCH</a>
+            <a href="tour-dates.html">TOUR DATES</a>
+          </h2>
+        </nav>
+      </div>
+
+  <div class="dates-header">
+    TOUR DATES
+  </div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'dates-body-chunk')">PAST</button>
+  <button class="tablinks" onclick="openCity(event, 'future-body-chunk')">FUTURE</button>
+</div>
+
+
+<div id="dates-body-chunk" class="tabcontent">
+    <div class="dates-body">
+      11.03.2018 | The Queen Mary | Long Beach, CA
+    </div>
+    <div class="dates-body">
+      11.01.2018 | Terrapin Crossroads | San Rafael, CA
+    </div>
+    <div class="dates-body">
+      10.31.2018 | Rickshaw Stop | San Francisco, CA
+    </div>
+    <div class="dates-body">
+      09.14.2018 | Omni Space | Beijing, China
+    </div>
+    <div class="dates-body">
+      09.13.2018 | Yuyintang Park | Shanghai, China
+    </div>
+    <div class="dates-body">
+      09.12.2018 | Hou LIve | Shenzhen, China
+    </div>
+    <div class="dates-body">
+      09.07.2018 | Live Arena RCA | Bangkok, Thailand
+    </div>
+    <div class="dates-body">
+      09.05.2018 | Gimme Shelter Bali | Kabupaten Badung, Indonesia
+    </div>
+    <div class="dates-body">
+      09.01.2018 | Widelanes Festival | Jakarta, Indonesia
+    </div>
+    <div class="dates-body">
+      04.21.2018 | SONORA | Indio, CA
+    </div>
+    <div class="dates-body">
+      04.14.2018 | SONORA | Indio, CA
+    </div>
+    <div class="dates-body">
+      03.18.2018 | Moth CLub | London, United Kingdom
+    </div>
+    <div class="dates-body">
+      03.17.2018 | Moth Club | London, United Kingdom
+    </div>
+    <div class="dates-body">
+      03.15.2018 | iKSV Salon | Istanbul, Turkey
+    </div>
+    <div class="dates-body">
+      03.14.2018 | iKSV Salon | Istanbul, Turkey
+    </div>
+    <img src="./assets/images/mhc_logo.png" id="past-logo"></>
+    <div id="redline"></div>
+  </div>
+
+<div id="future-body-chunk" class="tabcontent">
+  <p>Check back soon for future tour dates.</p>
+  <img src="./assets/images/mhc_logo.png" id="future-logo"></>
+  <div id="redline2"></div>
+</div>
+
+<img src="./assets/images/tour-dates.png" id="tour-image"></>
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+  </body>
+</html>
